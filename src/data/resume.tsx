@@ -144,7 +144,7 @@ export const DATA = {
     },
     {
       title: "Study Notion",
-      href: "https://github.com/sarthaklaptop",
+      href: "https://github.com/sarthaklaptop/studynotion",
       dates: "",
       active: true,
       description:
