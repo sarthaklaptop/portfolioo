@@ -15,7 +15,6 @@ export const DATA = {
   skills: [
     "HTML",
     "CSS",
-    "SCSS",
     "Tailwind CSS",
     "Material UI",
     "Rsuite UI",
@@ -34,6 +33,7 @@ export const DATA = {
     "Git/GitHub",
     "Vite",
     "Monorepo",
+    "RUST"
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
@@ -60,22 +60,20 @@ export const DATA = {
         name: "X",
         url: "https://dub.sh/sarthak/twitter",
         icon: Icons.x,
-
         navbar: true,
       },
-      // Youtube: {
-      //   name: "Linkdin",
-      //   url: "https://dub.sh/dillion-youtube",
-      //   icon: Icons.youtube,
-      //   navbar: true,
-      // },
       email: {
         name: "Send Email",
-        url: "#",
+        url: "mailto:sarthaklaptop402@gmail.com?subject=Hello From Portfolio Website",
         icon: Icons.email,
-
-        navbar: false,
+        navbar: true,
       },
+      resume: {
+        name: "Resume",
+        url: "https://dub.sh/sarthak-drive-resume",
+        icon: Icons.googleDrive,
+        navbar: true,
+      }
     },
   },
 
@@ -94,6 +92,17 @@ export const DATA = {
     }
   ],
   coursework: [
+    {
+      school: "Full Stack + DevOps + Web3",
+      href: "/",
+      badges: ["TypeScript","Next.js","Serverless","Cloudflare", "Socket.io", "Docker", "PostgresSQL", "Prisma"],
+      location: "remote",
+      title: "100xDevs",
+      logoUrl: "/100xdevs.png",
+      start: "Aug 2024",
+      end: "Ongoing",
+      description: "Comprehensive full-stack development and DevOps course covering advanced topics"
+    },
     {
       school: "Full Stack Development",
       href: "/",
@@ -118,6 +127,39 @@ export const DATA = {
     }
   ],
   projects: [
+    {
+      title: "Redirect Link (SAAS Product)",
+      href: "https://shrnk-six.vercel.app",
+      dates: "",
+      active: true,
+      description:
+        "shrnk fast, feature rich, minimalistic and open source URL shortener. Built with Next.js, Prisma, NextAuth and Postgres.",
+      technologies: [
+        "Next.js",
+        "Typescript",
+        "Prisma",
+        "PostgresSQl",
+        "AceternityUI",
+        "Shadcn UI",
+        "Next-Auth",
+        "TailwindCSS"
+      ],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/sarthaklaptop/shrnk",
+          icon: <Icons.github className="size-3" />,
+        },
+        {
+          type: "Website",
+          href: "https://shrnk-six.vercel.app",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/shrnk.png",
+      video:
+        "",
+    },
     {
       title: "Smart Farmer",
       href: "https://github.com/sarthaklaptop/SIH_final22",

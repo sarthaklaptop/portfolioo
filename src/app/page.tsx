@@ -197,7 +197,7 @@ export default function Page() {
                 soliciting.
               </p>
             </div>
-            <ContactForm />
+            {/* <ContactForm /> */}
           </BlurFade>
         </div>
       </section>
