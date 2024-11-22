@@ -11,6 +11,7 @@ import Link from "next/link";
 import Markdown from "react-markdown";
 import { CourseWorkCard } from "@/components/coursework-card";
 import { Cover } from "@/components/ui/cover";
+import LampDemo, { LampContainer } from "@/components/ui/lamp";
 
 const BLUR_FADE_DELAY = 0.04;
 
@@ -94,7 +95,7 @@ export default function Page() {
             </BlurFade>
           ))}
         </div>
-</section>
+      </section>
 
       <section id="projects">
         <div className="space-y-12 w-full py-12">
@@ -115,6 +116,9 @@ export default function Page() {
               </div>
             </div>
           </BlurFade>
+          {/* <LampDemo/>
+          <LampContainer> */}
+          {/* <LampContainer></LampContainer> */}
           <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 max-w-[800px] mx-auto">
             {DATA.projects.map((project, id) => (
               <BlurFade
