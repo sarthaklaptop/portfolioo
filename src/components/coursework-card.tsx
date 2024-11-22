@@ -92,7 +92,7 @@ export const CourseWorkCard = ({
 
               <div className="mt-2">
                 {badges && (
-                    <span className="inline-flex gap-x-1">
+                    <span className="flex flex-wrap gap-1">
                         {badges.map((badge, index) => (
                             <Badge
                                 variant="secondary"

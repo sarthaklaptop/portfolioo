@@ -106,7 +106,7 @@ export const DATA = {
     {
       school: "Full Stack Development",
       href: "/",
-      badges: ["HTML","CSS","SCSS","Tailwind CSS",],
+      badges: ["Javascript","Tailwind","Express","NodeJs", "Razorpay Gateway"],
       location: "remote",
       title: "CodeHelp",
       logoUrl: "/codehelp.png",
@@ -117,7 +117,7 @@ export const DATA = {
     {
       school: "Complete Python Bootcamp",
       href: "/",
-      badges: ["HTML","CSS","SCSS","Tailwind CSS",],
+      badges: ["Python","Tkinter","WebScrapping", "Pandas", "Matplotlib"],
       location: "remote",
       title: "Udemy",
       logoUrl: "/udamy.png",
