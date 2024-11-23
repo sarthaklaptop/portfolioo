@@ -126,23 +126,57 @@ const CollisionMechanism = React.forwardRef<
   const [beamKey, setBeamKey] = useState(0);
   const [cycleCollisionDetected, setCycleCollisionDetected] = useState(false);
 
+  // useEffect(() => {
+  //   const checkCollision = () => {
+  //     if (
+  //       beamRef.current &&
+  //       containerRef.current &&
+  //       parentRef.current &&
+  //       !cycleCollisionDetected
+  //     ) {
+  //       const beamRect = beamRef.current.getBoundingClientRect();
+  //       const containerRect = containerRef.current.getBoundingClientRect();
+  //       const parentRect = parentRef.current.getBoundingClientRect();
+
+  //       if (beamRect.bottom >= containerRect.top) {
+  //         const relativeX =
+  //           beamRect.left - parentRect.left + beamRect.width / 2;
+  //         const relativeY = beamRect.bottom - parentRect.top;
+
+  //         setCollision({
+  //           detected: true,
+  //           coordinates: {
+  //             x: relativeX,
+  //             y: relativeY,
+  //           },
+  //         });
+  //         setCycleCollisionDetected(true);
+  //       }
+  //     }
+  //   };
+
+  //   const animationInterval = setInterval(checkCollision, 50);
+
+  //   return () => clearInterval(animationInterval);
+  // }, [cycleCollisionDetected, containerRef]);
+
   useEffect(() => {
     const checkCollision = () => {
       if (
         beamRef.current &&
         containerRef.current &&
-        parentRef.current &&
+        parentRef.current && // parentRef is used here
         !cycleCollisionDetected
       ) {
         const beamRect = beamRef.current.getBoundingClientRect();
         const containerRect = containerRef.current.getBoundingClientRect();
         const parentRect = parentRef.current.getBoundingClientRect();
-
+  
         if (beamRect.bottom >= containerRect.top) {
           const relativeX =
             beamRect.left - parentRect.left + beamRect.width / 2;
           const relativeY = beamRect.bottom - parentRect.top;
-
+  
           setCollision({
             detected: true,
             coordinates: {
@@ -154,12 +188,13 @@ const CollisionMechanism = React.forwardRef<
         }
       }
     };
-
+  
     const animationInterval = setInterval(checkCollision, 50);
-
+  
     return () => clearInterval(animationInterval);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [cycleCollisionDetected, containerRef]);
-
+  
   useEffect(() => {
     if (collision.detected && collision.coordinates) {
       setTimeout(() => {

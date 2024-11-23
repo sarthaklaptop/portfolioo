@@ -10,6 +10,7 @@ import { cn } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
 import Markdown from "react-markdown";
+import { LinkPreview } from "./ui/link-preview";
 
 interface Props {
   title: string;
@@ -82,6 +83,7 @@ export function ProjectCard({
           </Markdown>
         </div>
       </CardHeader>
+      {/* Tags */}
       <CardContent className="mt-auto flex flex-col px-2">
         {tags && tags.length > 0 && (
           <div className="mt-2 flex flex-wrap gap-1">
@@ -97,16 +99,20 @@ export function ProjectCard({
           </div>
         )}
       </CardContent>
+
+      {/* Links for github and Live Preview */}
       <CardFooter className="px-2 pb-2">
         {links && links.length > 0 && (
           <div className="flex flex-row flex-wrap items-start gap-1">
             {links?.map((link, idx) => (
-              <Link href={link?.href} key={idx} target="_blank">
-                <Badge key={idx} className="flex gap-2 px-2 py-1 text-[10px]">
-                  {link.icon}
-                  {link.type}
-                </Badge>
-              </Link>
+              <Link href={link?.href} key={idx}  target="_blank">
+                <LinkPreview url={link?.href}>
+                  <Badge key={idx} className="flex gap-2 px-2 py-1 text-[10px]">
+                    {link.icon}
+                    {link.type}
+                  </Badge>
+              </LinkPreview>
+                </Link>
             ))}
           </div>
         )}
