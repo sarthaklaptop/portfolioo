@@ -212,6 +212,35 @@ export const DATA = {
       image: "/StudyNotion.png",
       video: "",
     },
+    {
+      title: "Soltrek",
+      href: "https://sarthak-wallet.vercel.app/",
+      dates: "",
+      active: true,
+      description:
+        "Soltrek is a secure, Solana-based web wallet that generates secret phrases and multiple key pairs. Multi-chain support coming soon.",
+      technologies: [
+        "Next.js",
+        "@solana/web3.js",
+        "bip39",
+        "framer-motion"
+      ],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/sarthaklaptop/WebWallet",
+          icon: <Icons.github className="size-3" />,
+        },
+        {
+          type: "Website",
+          href: "https://sarthak-wallet.vercel.app/",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/Soltrek.png",
+      video:
+        "",
+    },
   ],
   // hackathons: [
   //   {
