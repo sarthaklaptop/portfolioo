@@ -186,7 +186,7 @@ export const DATA = {
     },
     {
       title: "Study Notion",
-      href: "https://github.com/sarthaklaptop/studynotion",
+      href: "https://studyy-notion.vercel.app/",
       dates: "",
       active: true,
       description:
@@ -195,7 +195,8 @@ export const DATA = {
         "react.js",
         "Cloudinary",
         "Razorpay",
-        "TailwindCSS"
+        "TailwindCSS",
+        'Express'
       ],
       links: [
         // {
@@ -207,6 +208,11 @@ export const DATA = {
           type: "Source",
           href: "https://github.com/sarthaklaptop",
           icon: <Icons.github className="size-3" />,
+        },
+        {
+          type: "Website",
+          href: "https://studyy-notion.vercel.app/",
+          icon: <Icons.globe className="size-3" />,
         },
       ],
       image: "/StudyNotion.png",
