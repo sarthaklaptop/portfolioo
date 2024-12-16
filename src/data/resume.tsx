@@ -128,12 +128,12 @@ export const DATA = {
   ],
   projects: [
     {
-      title: "Redirect Link (SAAS Product)",
-      href: "https://shrnk-six.vercel.app",
+      title: "Shrnk (SAAS Product)",
+      href: "https://dub.sh/shrnk",
       dates: "",
       active: true,
       description:
-        "shrnk fast, feature rich, minimalistic and open source URL shortener. Built with Next.js, Prisma, NextAuth and Postgres.",
+        "Shrnk is fast, feature rich, minimalistic and open source URL shortener. Built with Next.js, Prisma, NextAuth and Postgres.",
       technologies: [
         "Next.js",
         "Typescript",
@@ -152,7 +152,7 @@ export const DATA = {
         },
         {
           type: "Website",
-          href: "https://shrnk-six.vercel.app",
+          href: "https://dub.sh/shrnk",
           icon: <Icons.globe className="size-3" />,
         },
       ],
@@ -220,7 +220,7 @@ export const DATA = {
     },
     {
       title: "Soltrek",
-      href: "https://sarthak-wallet.vercel.app/",
+      href: "https://soltrek.sarthak.live/",
       dates: "",
       active: true,
       description:
@@ -239,7 +239,7 @@ export const DATA = {
         },
         {
           type: "Website",
-          href: "https://sarthak-wallet.vercel.app/",
+          href: "https://soltrek.sarthak.live/",
           icon: <Icons.globe className="size-3" />,
         },
       ],
