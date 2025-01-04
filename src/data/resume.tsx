@@ -161,6 +161,33 @@ export const DATA = {
         "",
     },
     {
+      title: "SoarUI",
+      href: "https://soarui.sarthak.live/",
+      dates: "",
+      active: true,
+      description:
+        "SoarUI offers a collection of sleek, responsive, and ready-to-use components. Copy, paste, and customize with ease—no setup required. Perfect for developers seeking speed, simplicity, and elegance. Free and open-source!",
+      technologies: [
+        "Next.js",
+        "Tailwind",
+      ],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/sarthaklaptop/SoarUI",
+          icon: <Icons.github className="size-3" />,
+        },
+        {
+          type: "Website",
+          href: "https://soarui.sarthak.live",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/soarUI.png",
+      video:
+        "",
+    },
+    {
       title: "Smart Farmer",
       href: "https://github.com/sarthaklaptop/SIH_final22",
       dates: "",
